@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.ming'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    
+    implementation 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+
+    // mandatory dependencies for using Spock
+    testImplementation 'org.codehaus.groovy:groovy-all:2.5.7'
+    testImplementation 'com.nagternal:spock-genesis:0.6.0'
+    testImplementation 'org.objenesis:objenesis:3.0.1'
+
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+}
+
