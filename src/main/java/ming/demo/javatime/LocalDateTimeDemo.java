@@ -15,7 +15,6 @@ public class LocalDateTimeDemo {
         LocalDateTime dt = LocalDateTime.of(2021, Month.JULY, 10, 10, 22, 30);
         log.info("dt={}", dt); //dt=2021-07-10T10:22:30
         log.info("dt.getDayOfWeek()={}", dt.getDayOfWeek()); //dt.getDayOfWeek()=SATURDAY
-        
         dt = dt.plus(30, ChronoUnit.HOURS);
         log.info("dt plus 30 hours ={}", dt); //2021-07-11T16:22:30
         
