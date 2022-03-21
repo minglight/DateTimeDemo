@@ -32,5 +32,9 @@ public class TimestampDemo {
         System.out.println("Default TimeZone is Asia/Taipei,  System current millis  diff = " + (taipeiSystem-utcEpoch));
         long zdt = ZonedDateTime.now().toEpochSecond() * 1000;
         System.out.println("Default TimeZone is Asia/Taipei,  System current millis  diff = " + (zdt-utcEpoch));
+//        Default TimeZone is Asia/Taipei,  instant epochMilli  diff = 28
+//        Default TimeZone is Asia/Taipei,  Date timestamp  diff = 28
+//        Default TimeZone is Asia/Taipei,  System current millis  diff = 30
+//        Default TimeZone is Asia/Taipei,  System current millis  diff = -880
     }
 }

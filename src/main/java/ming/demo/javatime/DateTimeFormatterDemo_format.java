@@ -18,13 +18,18 @@ public class DateTimeFormatterDemo_format {
     /***
      * Conclusion
      * How to choose timezone in format() :
-     * 1. if has timeZone configured
+     * 1. if has timeZone configured ( like ZonedDateTime )
      *  Zone in DateTimeFormatter > Zone in ZonedDateTime 
      * 2. if no timeZone configured ( for LocalDateTime )
      *  print no timezone
      * 3. Default Timezone doesn't affect the format() method
      */
     public static void main(String[] args) {
+        
+        log.info("noTimeZoneFormatter timezone={}", noTimeZoneFormatter.getZone());
+        log.info("utcZonedFormatter timezone={}", utcZonedFormatter.getZone());
+        log.info("taipeiZonedFormatter timezone={}", taipeiZonedFormatter.getZone());
+        
         /***
          * Default timezone is UTC
          */
